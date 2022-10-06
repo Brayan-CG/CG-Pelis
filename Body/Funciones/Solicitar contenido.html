@@ -26,19 +26,35 @@
     
     <br><br><br>
     
+    <h3>¿ Que es solicitar contenido ?</h3>
+    <p>solicitar contenido es una sección donde puedes enviar una solicitud para agregar una Película, Serie o Anime a la app.</p>
+    
     <section id="solicitar">
       <div class="solicitar">
       <h2>Solicitar contenido</h2>
-        <form>
-          <input type="user" placeholder="Nombre de usuario" required>
+        <form action="https://formsubmit.co/cgstudios002@gmail.com" method="POST">
+            <center>
+          <input type="user" required placeholder="Nombre de usuario">
+          
           <input type="email" placeholder="E-mail" required>
-          <input type="text" placeholder="Nombre de la película, Serie o Animé" required>
+          
           <br><br>
           
-          <button type="submit" class="button_1"><img src="Iconos/Enviar.png" width="40%"></img></button></button>
+          <input type="contenido" placeholder="Nombre de la película" required>
+          </center>
+          <br><br>
+          
+<button type="submit" class="button_1"><img src="Iconos/Enviar.png" width="50%"></img></button>
+
+<input type="hidden" name="_next" value="http://localhost:8000">
+
+<input type="hidden" name="_captcha" value="false">
+
         </form>
       </div>
     </section>
+    
+    <script src="js/solicitar.js"></script>
     
 </body>
 </html>
