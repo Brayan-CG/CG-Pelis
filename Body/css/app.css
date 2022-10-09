@@ -1,0 +1,69 @@
+body
+{
+    background: #fff;
+    color: #000;
+}
+#xs-header
+{
+    background: #cecece;
+    overflow: hidden;
+    z-index: 999999;
+    left: 0; 
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    border-bottom: 2px solid red;
+}
+#xs-header img
+{
+    width: 50%;
+    height: auto;
+}
+.cabeza img
+{
+    width: 34%;
+    float: left;
+    margin-right: 10px;
+}
+.cabeza a
+{
+    background: red;
+    padding: 3%;
+    width: 100%;
+    height: 16%;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.cabeza div
+{
+    background: red;
+    position: relative;
+    left: 0;
+    padding: 3%;
+    width: 80%;
+    height: 24%;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+div .poster
+{
+    overflow-y:hidden;
+    white-space:nowrap;
+    margin:3px;
+}
+.poster img
+{
+    width: 40%;
+    border-radius: 7px;
+}
+.logo2 img
+{
+    width: 80%;
+}
+h4
+{
+    text-align: center;
+}
