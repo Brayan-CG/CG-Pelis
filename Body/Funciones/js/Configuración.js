@@ -3,5 +3,5 @@ function abrir(){
 }
 
 function cerrar(){
-    document.getElementById("política").style.display="none"
+    document.getElementById("política").style.display="none";
 }
