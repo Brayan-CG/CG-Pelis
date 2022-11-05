@@ -1,1 +1,1 @@
-# CG-admin
+# CG-Pelis
