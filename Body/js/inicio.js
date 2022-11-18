@@ -1,11 +1,9 @@
 setTimeout(function() {
-    document.getElementById("mensajes").style.display="block";
+    document.getElementById("Aleatorio").style.border=" #8098ff 3px solid";
+    
+document.getElementById("mensajes").style.display="block";
 
-}, 1000*2);
-
-function cerrar(){
-    document.getElementById("mensajes").style.display="none"
-}
+}, 1000*30);
 
 function configuración(){
     location.href="Body/Funciones/configuracion.html"
