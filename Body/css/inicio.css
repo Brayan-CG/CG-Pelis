@@ -12,6 +12,17 @@ body
    background: #000;
    height: 100vh;
 }
+.animación
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
 .container
 {
     background:transparent;
@@ -132,12 +143,12 @@ div .poster
 {
     background: #000;
     overflow: hidden;
-    z-index: 999999;
+    z-index: 999;
     left: 0; 
     top: 0;
     position: fixed;
     width: 100%;
-    height: 10%;
+    height: 11%;
     border-bottom: 2px solid #55d5ff;
 }
 
