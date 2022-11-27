@@ -5,12 +5,6 @@ document.getElementById("mensajes").style.display="block";
 
 }, 1000*30);
 
-setTimeout(function() {
-    
-document.getElementById("animación").style.display="none";
-
-}, 1200*4);
-
 function configuración(){
     location.href="Body/Funciones/configuracion.html"
 }
