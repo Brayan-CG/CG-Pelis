@@ -1,0 +1,40 @@
+body
+{
+    background: black;
+    color: white;
+}
+.contenido
+{
+    background-image: url('1.jpg');
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    z-index: 999999;
+    padding: 8%;
+    border-radius: 10px;
+    top: 30%;
+    left: 14%;
+    width: 74%;
+    height: 48%;
+    color: black;
+}
+h3
+{
+    color: black;
+    text-align: center;
+}
+.contenido p
+{
+    text-align: center;
+}
+.contenido a
+{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.contenido a img
+{
+    width: 64%;
+    text-align: center;
+}

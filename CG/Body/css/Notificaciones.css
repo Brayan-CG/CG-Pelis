@@ -1,0 +1,24 @@
+body
+{
+   background: #000;
+   height: 100vh;
+   
+}
+
+#xs-header
+{
+    background: #000;
+    overflow: hidden;
+    z-index: 9999;
+    left: 0; 
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid red;
+}
+
+.post li
+{
+    color: #fff;
+}

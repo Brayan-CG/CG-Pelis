@@ -1,0 +1,15 @@
+/* area-para-los-estilos-del-preloader */
+/* Normal Usage */
+.hidden {
+  overflow: hidden;
+}
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cg-pelis.netlify.app/Body/css/Carga.gif");
+    z-index: 999;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
