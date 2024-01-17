@@ -12,7 +12,7 @@ if(user.photoURL === null) {
         
         if(user.displayName === null) {
             Swal.fire({
-    imageUrl: 'https://cg-pelis.netlify.app/Body/Iconos/logo.png',
+    imageUrl: 'https://cg-pelis.netlify.app/CG/Body/Iconos/logo.png',
     imageWidth: 200,
     imageHeight: 200,
     imageAlt: 'Custom image',
@@ -24,7 +24,7 @@ if(user.photoURL === null) {
     
     setTimeout(function() {
         
-            location.href="CG Pelis/CG.html"
+            location.href="https://cg-pelis.netlify.app/CG"
             
         }, 1000*4);
         }else {
@@ -41,7 +41,7 @@ if(user.photoURL === null) {
     
     setTimeout(function() {
         
-            location.href="CG Pelis/CG.html"
+            location.href="https://cg-pelis.netlify.app/CG"
             
         }, 1000*4);
         }
@@ -62,7 +62,7 @@ if(user.displayName === null) {
     
     setTimeout(function() {
         
-            location.href="CG Pelis/CG.html"
+            location.href="https://cg-pelis.netlify.app/CG"
             
         }, 1000*4);
 }else {
@@ -79,7 +79,7 @@ if(user.displayName === null) {
     
     setTimeout(function() {
         
-            location.href="CG Pelis/CG.html"
+            location.href="https://cg-pelis.netlify.app/CG"
             
         }, 1000*4);
 }
@@ -112,7 +112,7 @@ if(user.displayName === null) {
 
 }else{
     Swal.fire({
-    imageUrl: 'https://cg-pelis.netlify.app/Body/Iconos/logo.png',
+    imageUrl: 'https://cg-pelis.netlify.app/CG/Body/Iconos/logo.png',
     imageWidth: 200,
     imageHeight: 200,
     imageAlt: 'Custom image',
