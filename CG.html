@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="CG/Body/css/CG.css">
+
+<link rel="stylesheet" href="CG/Body/css/slick.css">
+
+<link rel="stylesheet" href="CG/Body/css/slick-theme.css">
+
+<link rel="shortcut icon" href="CG/Body/Iconos/logo.png" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="CG/Body/css/estilos.css">  
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1X4X0GE4LW">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1X4X0GE4LW');
+</script>
+
+<title>CG pelis</title>
+</head>
+<body>
+   
+    <div id="inicio">
+    
+    <!-- Logo -->
+    
+<div class="xs-header" id="logo">
+   <div class="btn-menu">
+			<label for="btn-menu">☰</label>
+   </div>
+ <a href="javascript:noti()" class="noti"><img src="CG/Body/Iconos/noti.png"></img></a>
+ 
+    <a href="javascript:inicio()"><img id="cgp" src="https://cg-pelis.netlify.app/Body/Iconos/CG Pelis.gif"></img></a>
+    <a href="javascript:anime()"><img id="cga" src="https://cg-pelis.netlify.app/Body/Iconos/CG Anime.gif"></img></a>
+ 
+ <a href="javascript:confi()" id="user"><img class="user" src="CG/Body/Iconos/usuario.png"></img></a>   
+ <a href="javascript:cerrar()" class="logout"><img src="CG/Body/Iconos/salida.png"></img></a>
+</div>
+
+<!-- iframe -->
+
+<div class="ifra" id="ifra">
+    
+    <iframe id="Iframe" src="CG/Inicio.html"></iframe>
+    
+</div>
+   
+   <!--Barra de navegacion-->
+   
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="javascript:inicio()" id="ini">Inicio</a>
+			<a href="javascript:anime()" id="ani">Anime</a>
+			<a href="javascript:buscar()" id="bus">Buscar</a>
+			<a href="javascript:solicitud()" id="soli">Solicitud</a>
+			<a href="javascript:confi()" id="confi">Configuracion</a><br><br><br><br><br><br>
+			<a href="javascript:cerrar()" class="cerrar">Cerrar Sesion</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+
+<div id="s-f"></div>
+
+<footer id="foot">
+    
+<div class="foot-m" id="ini">
+    
+<a href="javascript:ini()" class="material-icons"><img src="CG/Body/Iconos/Inicio.png">Inicio</img></a>
+
+</div>
+
+<div class="foot-m" id="ani">
+    
+<a href="javascript:ani()" class="material-icons"><img src="CG/Body/Iconos/Anime.png">Anime</img></a>
+    
+</div>
+
+<div class="foot-m" id="bus">
+    
+<a href="javascript:bus()" class="material-icons"><img src="CG/Body/Iconos/Buscar.png">Buscar</img></a>
+
+</div>
+
+<div class="foot-m" id="bus2">
+    
+<a href="javascript:bus2()" class="material-icons"><img src="CG/Body/Iconos/Buscar.png">Buscar</img></a>
+
+</div>
+
+<div class="foot-m" id="soli">
+    
+<a href="javascript:soli()" class="material-icons"><img src="CG/Body/Iconos/solicitud.png">Solicitud</img></a>
+
+</div>
+
+<div class="foot-m" id="confi">
+    
+<a href="javascript:confi()" class="material-icons"><img src="CG/Body/Iconos/configuración.png">Ajustes</img></a>
+
+</div>
+
+</div>
+
+</footer>
+
+</div>
+
+<!-- firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js" type="module"></script>
+
+<!-- login -->
+
+<script src=".CG/Body/js/app/firebase.js" type="module"></script>
+<script src=".CG/Body/js/app/postList.js"></script>
+<script src="CG/Body/js/cerrar.js" type="module"></script>
+<script src="CG/Body/js/Check.js" type="module"></script>
+<script src="CG/Body/js/botones.js"></script>
+<script src="CG/Body/js/app/sweetalert.js"></script>
+
+<!-- contador -->
+
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="CG/Body/js/simplyCountdown.min.js"></script>
+	<script src="CG/Body/js/countdown.js"></script>
+	
+	<!-- analiticas -->
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9931816603051611"
+     crossorigin="anonymous"></script>
+     
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YX14HD73TH"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YX14HD73TH'); </script>
+   
+</body>
+</html>
