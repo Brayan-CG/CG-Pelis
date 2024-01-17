@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Body/Funciones/css/Load.css">
+    <link rel="stylesheet" href="Body/Funciones/css/style.css">
+    <title>Configuración</title>
+</head>
+<body>
+    
+    <!-- logo 2 -->
+    
+    <center>
+    <div class="foto">
+        <img id="photo" src="" width="30%"></img>
+    </div>
+    </center>
+    
+    <div id="usuario">
+       <h3 id="vista">Vista previa de la foto</h3>        
+       <center><ul id="data"></ul></center><br>
+    </div>
+    
+    <div class="boton">
+        <a class="actualizar" href="javascript:actualizar()">Editar Cuenta</a>
+        <a class="borrar" href="">Borrar Cuenta</a>
+    </div><br><br>
+    
+    <h2>Más</h2>
+
+<div><div align="center" class="posters">
+    
+<a href="Body/Funciones/Solicitar.html"><img class="poster" src="Body/Funciones/Iconos/solicitud.png"></a>
+
+<a href="https://paypal.me/cgpelis002?country.x=CO&locale.x=es_XC"><img class="poster" src="Body/Funciones/Iconos/Donar.png"></a>
+
+<a href="http:/action_share"><img class="poster" src="Body/Funciones/Iconos/Compartir.png"></a>
+
+<a href="javascript:abrir()"><img class="poster" src="Body/Funciones/Iconos/Facebook.png"></a>
+
+<a href="javascript:poli()"><img class="poster" src="Body/Funciones/Iconos/Política.png"></img></a>
+ 
+<a href="Body/Funciones/info.html"><img class="poster" src="Body/Funciones/Iconos/info.png"></a>
+
+<a href="https://chat.whatsapp.com/GlDYojOrgY4HShDIuevPb2"><img class="poster" src="Body/Funciones/Iconos/Soporte.png"></a>
+
+</div></div>
+
+<center><p>Copyright © 2023</p>
+
+<!-- actualizar Usuario-->
+
+<div id="box" class="box">
+		<form autocomplete="on" id="new-form">
+			<h2>Editar Cuenta</h2>
+			<div class="photo">
+			   <br><input type="file" name="foto" id="new-foto" accept="image/*"><label for="new-foto"><img id="icon" src="Body/Iconos/usuario.png" width="20%"></label>
+			</div>
+			<div class="inputBox">
+				<input type="text" id="new-name">
+				<span id="name">Nombre</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="email" id="new-email">
+				<span id="correo">Correo electronico</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" id="new-password">
+        <img src="Body/Iconos/show.png"  class="icon" id="Eye">
+				<span id="contra">Contraseña</span>
+				<i></i>
+			</div><br>
+			<input type="submit" id="subir" value="Actualizar">
+			<a class="cerrar" href="javascript:boxX()">Cerrar</a>
+		</form>
+
+	</div>
+	
+	<!-- fin -->
+
+<script src="Body/Funciones/js/Configuración.js"></script>
+<script src="Body/Funciones/js/sweetalert.js"></script>
+
+<!-- firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-storage.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js" type="module"></script>
+
+<!-- script -->
+
+<script src="Body/js/app/firebase.js" type="module"></script>
+<script src="Body/js/User.js" type="module"></script>
+<script src="Body/js/Actualizar.js" type="module"></script>
+<script src="Body/js/app/sweetalert.js"></script>
+
+<script>
+    function actualizar()
+{
+    document.getElementById("box").style.display="block"
+}
+function boxX()
+{
+    document.getElementById("box").style.display="none"
+}
+
+var eye = document.getElementById('Eye');
+var input = document.getElementById('new-password');
+eye.addEventListener("click", function(){
+    if (input.type == "password") {
+         input.type = "text"
+         eye.style.opacity=0.8
+    }else {
+        input.type ="password"
+        eye.style.opacity = 0.2
+    }
+})
+
+const original = 'Body/Iconos/usuario.png';
+
+const file = document.getElementById( 'new-foto' );
+const imgg = document.getElementById( 'icon' );
+const img = document.getElementById( 'photo' );
+file.addEventListener( 'change', e => {
+  if( e.target.files[0] ){
+    const reader = new FileReader( );
+    reader.onload = function( e ){
+      document.getElementById("box").style.display="none"
+      document.getElementById("vista").style.display="block"
+      img.src = e.target.result;
+      imgg.src = e.target.result;
+      setTimeout(function() {
+      document.getElementById("box").style.display="block"
+    },1000*2);
+    }
+    reader.readAsDataURL(e.target.files[0])
+  }else{
+    img.src = original;
+    imgg.src = original;
+  }
+} );
+
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9931816603051611"
+     crossorigin="anonymous"></script>
+     
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YX14HD73TH"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YX14HD73TH'); </script>
+    
+</body>
+</html>
+
+<div id="política" class="política">
+    
+    <a href="javascript:cerrar()"><img src="Body/Funciones/Iconos/cerrar.png"></img></a>
+    
+  <h3>Facebook</h3>
+  
+   <a href="https://www.facebook.com/profile.php?id=100092672222031">Faceboock Oficial</a><br><br>
+  
+  <a href="https://www.facebook.com/profile.php?id=100076531763610">Programador</a><br><br>
+  
+  <a href="https://www.facebook.com/profile.php?id=100089157482856">patrocinadora</a><br><br>
+ 
+   <a href=""></a><br><br>
+    
+</div>
