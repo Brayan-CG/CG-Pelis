@@ -1,0 +1,62 @@
+body
+{
+    background: #000;
+    color: #fff;
+}
+.logo
+{
+    background: #000;
+    float: left;
+    margin-bottom: 4px;
+    overflow: hidden;
+    z-index: 99999;
+    left: 0; 
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #b095ff;
+}
+.actualizar 
+{
+    text-align: center;
+    display: none;
+}
+.actualizar p
+{
+    text-align: center;
+    font-size: 18px;
+}
+.actualizar a img
+{
+    vertical-align: top;
+    align-items: center;
+    cursor: pointer;
+}
+.actualizar a
+{
+    text-decoration: none;
+    justify-content: center;
+}
+.Datos h3
+{
+    text-align: center;
+    margin-top: 14%;
+}
+.características h3
+{
+    text-align: center;
+}
+.características h2
+{
+    text-align: center;
+}
+.características p
+{
+    text-align: center;
+}
+
+.credito h1
+{
+    text-align: center;
+}

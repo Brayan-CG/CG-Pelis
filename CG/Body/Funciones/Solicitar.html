@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/Solicitar.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/Load.css">
+    <title>Solicitar contenido</title>
+</head>
+<body>
+    
+    <!-- loader -->
+    
+    <div id="preloade"></div>
+    
+    <script src="js/load.js"></script>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <center><img class="Mini" id="foto" src="https:cg-pelis.netlify.app/Body/Iconos/Logo.png" width="40%"></center>
+    
+    <h2>¿ Que es solicitar contenido ?</h2>
+    <p>solicitar contenido es una sección donde puedes enviar una solicitud para agregar una Película, Serie o Anime a la app.<br><br>(Solo se puede enviar 100 solicitudes al mes)</p>
+
+      <h2>Solicitar contenido</h2>
+      
+     <form name="Solicitud" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            
+         <center>
+                
+          <input type="text" name="Usuario" required placeholder="Nombre de usuario" id="user">
+          
+          <input type="email" name="Correo" placeholder="Correo" required id="email">
+          
+          <br><br>
+          
+          <input type="Contenido" name="Solicitud" placeholder="Nombre de la película" required>
+          
+          </center>
+          <br><br>
+          
+       <center><div data-netlify-recaptcha="true"></div>
+          
+          <button type="submit">Enviar</button></center>
+
+        </form>
+    
+    <!-- firebase JS-->
+    
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-storage.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js" type="module"></script>
+    
+    <script src="js/solicitar.js" type="module"></script>
+    <sscript src="js/firebase.js" type="module"></script>
+    <script src="js/sweetalert.js"></script>
+    
+    <script>
+        
+function enviar() {
+    swal.fire({
+        icon: 'success',
+        title: 'solicitud enviada',
+        text: 'se ha enviado la solicitud exitosamente',
+        showConfirmButton: false,
+        timer: 2000
+    });
+}
+        
+    </script>
+    
+</body>
+</html>

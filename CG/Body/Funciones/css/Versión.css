@@ -1,0 +1,137 @@
+body
+{
+    background: #000;
+    color: #fff;
+}
+.logo
+{
+    background: #000;
+    float: left;
+    margin-bottom: 4px;
+    overflow: hidden;
+    z-index: 99999;
+    left: 0; 
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #b095ff;
+}
+.actualizar 
+{
+    text-align: center;
+    display: none;
+}
+.actualizar p
+{
+    text-align: center;
+    font-size: 18px;
+}
+.actualizar a img
+{
+    vertical-align: top;
+    align-items: center;
+    cursor: pointer;
+}
+.actualizar a
+{
+    text-decoration: none;
+    justify-content: center;
+}
+.Datos h3
+{
+    text-align: center;
+}
+.características h3
+{
+    text-align: center;
+}
+.características h2
+{
+    text-align: center;
+}
+.características p
+{
+    text-align: center;
+}
+
+.credito h1
+{
+    text-align: center;
+}
+
+footer
+{
+    background:#000;
+    overflow: hidden;
+    z-index: 99999;
+    display:flex;
+    width:100%;
+    bottom:0;
+ justify-content:space-around;
+    align-items:center;
+    padding: 2%;
+    position:fixed;
+    left:0;
+    right:0px;
+    color:#fff;
+    border-top: 2px solid #b095ff;
+}
+
+footer div
+{
+    font-size:10px;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+}
+
+footer i
+{
+    padding-left:0px;
+}
+
+/*footer end*/
+footer img
+{
+    height: 10%;
+    width: 20%;
+    margin-bottom:3px;
+}
+
+footer svg
+{
+    height: 10%;
+    width: 20%;
+    margin-bottom:3px;
+}
+
+footer span
+{
+    transform:scale(1);
+}
+
+#s-f
+{
+    font-size: 20px;
+    padding: 20%;
+    margin-bottom:40px;
+}
+
+.slider ul 
+{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.foot-m
+{
+   font-size: 20px; 
+}
+
+.foot-m a i img
+{
+    width: 30%;
+}

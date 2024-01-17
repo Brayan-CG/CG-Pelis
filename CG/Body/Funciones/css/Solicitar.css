@@ -1,0 +1,167 @@
+body
+{
+    background: #000;
+    color: #fff;
+}
+.Mini
+{
+    margin-top: 16%;
+    border-radius: 100px;
+}
+p
+{
+    text-align: center;
+}
+h2
+{
+    text-align: center;
+}
+.solicitar
+{
+    text-align: center;
+}
+input[type="text"]
+{
+  width: 40%;
+  outline: none;
+  border: solid 4px #b095ff;
+  border-radius: 20px;
+  background: black;
+  color: #fff;
+  padding: 2%;
+  float: left;
+}
+input[type="email"]
+{
+  width: 40%;
+  outline: none;
+  border: solid 4px #b095ff;
+  border-radius: 20px;
+  background: black;
+  color: #fff;
+  padding: 2%;
+}
+input[type="Contenido"]
+{
+  width: 40%;
+  outline: none;
+  border: solid 4px #b095ff;
+  border-radius: 20px;
+  background: black;
+  color: #fff;
+  padding: 4%;
+  height: 10px;
+}
+button[type="submit"]
+{
+  color: white;
+	padding: 11px 25px;
+	background: transparent;
+	border: solid 3px #b095ff;
+	border-radius: 8px;
+	font-weight: 620px;
+	width: 120px;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+}
+button[type="submit"]:active 
+{
+  color: black;
+  background: #b095ff;
+	border: solid 3px white;
+}
+
+#xs-header
+{
+    background: grey;
+    overflow: hidden;
+    z-index: 999;
+    left: 0; 
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid red;
+}
+
+#xs-header img
+{
+    width: 50%;
+    height: auto;
+}
+footer
+{
+    background:#000;
+    overflow: hidden;
+    z-index: 99999;
+    display:flex;
+    width:100%;
+    bottom:0;
+ justify-content:space-around;
+    align-items:center;
+    padding: 2%;
+    position:fixed;
+    left:0;
+    right:0px;
+    color:#fff;
+    border-top: 2px solid #b095ff;
+}
+
+footer div
+{
+    font-size:10px;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+}
+
+footer i
+{
+    padding-left:0px;
+}
+
+/*footer end*/
+footer img
+{
+    height: 10%;
+    width: 20%;
+    margin-bottom:3px;
+}
+
+footer svg
+{
+    height: 10%;
+    width: 20%;
+    margin-bottom:3px;
+}
+
+footer span
+{
+    transform:scale(1);
+}
+
+#s-f
+{
+    font-size: 20px;
+    padding: 20%;
+    margin-bottom:40px;
+}
+
+.slider ul 
+{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.foot-m
+{
+   font-size: 20px; 
+}
+
+.foot-m a i img
+{
+    width: 30%;
+}

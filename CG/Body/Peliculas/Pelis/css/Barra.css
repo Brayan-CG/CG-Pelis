@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    user-select:none;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline:none;
+    user-select:none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+   background: #000;
+   height: 100%;
+   
+}
+
+#xs-header
+{
+    background: #000;
+    float: left;
+    margin-bottom: 4px;
+    overflow: hidden;
+    z-index: 99999;
+    left: 0; 
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #b095ff;
+}
+
+footer
+{
+    background:#000;
+    overflow: hidden;
+    z-index: 99999;
+    display:flex;
+    width:100%;
+    bottom:0;
+ justify-content:space-around;
+    align-items:center;
+    padding: 2%;
+    position:fixed;
+    left:0;
+    right:0px;
+    color:#fff;
+    border-top: 2px solid #b095ff;
+}
+
+footer div
+{
+    font-size:10px;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+}
+
+footer i
+{
+    padding-left:0px;
+}
+
+/*footer end*/
+footer img
+{
+    height: 10%;
+    width: 20%;
+    margin-bottom:3px;
+}
+
+footer svg
+{
+    height: 10%;
+    width: 20%;
+    margin-bottom:3px;
+}
+
+footer span
+{
+    transform:scale(1);
+}
+
+#s-f
+{
+    font-size: 20px;
+    padding: 20%;
+    margin-bottom:40px;
+}
+
+.slider ul 
+{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.foot-m
+{
+   font-size: 20px; 
+}
+
+.foot-m a i img
+{
+    width: 30%;
+}
