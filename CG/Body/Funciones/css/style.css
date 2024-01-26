@@ -48,7 +48,6 @@ body
 
 .cerrar
 {
-    position: fixed;
     color: white;
     text-decoration: none;
 	padding: 11px 25px;
@@ -60,7 +59,6 @@ body
 	margin: auto;
 	margin-top: 10px;
     transition: 1s;
-    text-decoration: none;
 }
 .cerrar:hover
 {
