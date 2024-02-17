@@ -24,7 +24,7 @@ if(user.photoURL === null) {
     
     setTimeout(function() {
         
-            location.href="https://cg-pelis.netlify.app"
+            location.href="https://cg-pelis.netlify.app/CG"
             
         }, 1000*4);
         }else {
@@ -41,7 +41,7 @@ if(user.photoURL === null) {
     
     setTimeout(function() {
         
-            location.href="https://cg-pelis.netlify.app"
+            location.href="https://cg-pelis.netlify.app/CG"
             
         }, 1000*4);
         }
@@ -62,7 +62,7 @@ if(user.displayName === null) {
     
     setTimeout(function() {
         
-            location.href="https://cg-pelis.netlify.app"
+            location.href="https://cg-pelis.netlify.app/CG"
             
         }, 1000*4);
 }else {
@@ -79,7 +79,7 @@ if(user.displayName === null) {
     
     setTimeout(function() {
         
-            location.href="https://cg-pelis.netlify.app"
+            location.href="https://cg-pelis.netlify.app/CG"
             
         }, 1000*4);
 }

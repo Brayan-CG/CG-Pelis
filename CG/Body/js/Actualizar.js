@@ -48,11 +48,11 @@ updatePassword(auth.currentUser, newPassword).then(() => {
         title: 'Completado',
         text: 'se ha actualizado los datos exitosamente',
         showConfirmButton: false,
-        timer: 10000
+        timer: 2000
     });
     setTimeout(function() {
       window.location.reload()
-    },1000*10);
+    },1000*2);
       
 }).catch((error) => {
 swal.fire({
@@ -60,62 +60,13 @@ swal.fire({
         title: 'Completado',
         text: 'se ha actualizado los datos exitosamente',
         showConfirmButton: false,
-        timer: 10000
+        timer: 2000
     });
 setTimeout(function() {
       window.location.reload()
-    },1000*10);
+    },1000*2);
 });
    } catch(error) {
   
   }
 });
-
-function uploadProfileImg() {
-
-const file = document.getElementById('new-foto').files[0];
-const user = auth.currentUser;
-const uid = user.uid;
-
-   const storageRef = ref(storage, '/userFoto/' + uid);
-   uploadBytes(storageRef, file).then((snapshot) => {
-    console.log('archivo subido');
-
-getDownloadURL(ref(storage, storageRef))
-  .then((url) => {
-
-updateProfile(auth.currentUser, {
-  photoURL: url,
-}).then(() => {
-
-}).catch((error) => {
-  swal.fire({
-        icon: 'warning',
-        title: 'Importante',
-        text: 'Para poder cambiar la Contraseña tienes que iniciar sesión recientemente',
-        showConfirmButton: false,
-        timer: 2000
-       });
-});
-
-   console.log(url);
-}).catch((error) => {
-  swal.fire({
-        icon: 'warning',
-        title: 'Importante',
-        text: 'Para poder cambiar la Contraseña tienes que iniciar sesión recientemente',
-        showConfirmButton: false,
-        timer: 2000
-       });
-});
-
-}).catch((error) => {
-  swal.fire({
-        icon: 'warning',
-        title: 'Importante',
-        text: 'Para poder cambiar la Contraseña tienes que iniciar sesión recientemente',
-        showConfirmButton: false,
-        timer: 2000
-       });
-});
-}

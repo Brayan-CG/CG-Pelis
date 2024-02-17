@@ -30,7 +30,7 @@ onAuthStateChanged(auth, (user) => {
     if (user.displayName === null) {
    data.innerHTML = '<br><h2>Usuario</h2><br>'+'<strong>Correo: </strong>'+user.email+'<br><br><strong>Cuenta: </strong>gratuita<br><br>'
     }else{
-   data.innerHTML = '<br><h2>'+user.displayName+'</h2><br>'+'<strong>Correo: </strong>'+user.email+'<br><br><strong>Cuenta: </strong>gratuita<br><br>'
+   data.innerHTML = '<br><h2>'+user.displayName+'</h2><br>'+'<strong>Correo: </strong>'+user.email+'<br><br>'+'<strong>Id De Usuario: </strong>'+user.uid+'<br><br><strong>Cuenta: </strong>gratuita<br><br>'
   }
     
     console.log('login')
