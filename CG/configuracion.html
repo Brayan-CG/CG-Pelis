@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Body/Funciones/css/Load.css">
     <link rel="stylesheet" href="Body/Funciones/css/style.css">
+    <link rel="stylesheet" href="Body/css/cropper.css">
+    <link rel="stylesheet" href="Body/css/index.css">
+    <link rel="shortcut icon" href="Body/Iconos/logo.png" type="image/x-icon">
     <title>Configuración</title>
 </head>
 <body>
-    
+
     <!-- logo 2 -->
-    
-    <center>
+
+  <center>
     <div class="foto">
-        <img id="photo" src="" width="30%"></img>
+        <img id="photo" src="">
     </div>
-    </center>
+ 
+
+  </center>
     
     <div id="usuario">
        <h3 id="vista">Vista previa de la foto</h3>        
@@ -26,6 +31,8 @@
         <a class="borrar" href="">Borrar Cuenta</a>
         
         <br><br><br><br>
+
+<div class="action">      
     
     <h2>Más</h2>
 
@@ -35,19 +42,19 @@
 
 <a href="https://paypal.me/cgpelis002?country.x=CO&locale.x=es_XC"><img class="poster" src="Body/Funciones/Iconos/Donar.png"></a>
 
-<a href="http:/action_share"><img class="poster" src="Body/Funciones/Iconos/Compartir.png"></a>
+<a class="pc_boton" href="http:/action_share"><img class="poster" src="Body/Funciones/Iconos/Compartir.png"></a>
 
 <a href="javascript:abrir()"><img class="poster" src="Body/Funciones/Iconos/Facebook.png"></a>
 
-<a href="javascript:poli()"><img class="poster" src="Body/Funciones/Iconos/Política.png"></img></a>
+<a class="pc_boton" href="javascript:poli()"><img class="poster" src="Body/Funciones/Iconos/Política.png"></img></a>
  
-<a href="Body/Funciones/info.html"><img class="poster" src="Body/Funciones/Iconos/info.png"></a>
+<a class="pc_boton" href="Body/Funciones/info.html"><img class="poster" src="Body/Funciones/Iconos/info.png"></a>
 
 <a href="https://chat.whatsapp.com/GlDYojOrgY4HShDIuevPb2"><img class="poster" src="Body/Funciones/Iconos/Soporte.png"></a>
 
-</div></div>
+</div></div></div>
 
-<center><p>Copyright © 2023</p>
+<center>
 
 <!-- actualizar Usuario-->
 
@@ -55,7 +62,9 @@
 		<form autocomplete="on" id="new-form">
 			<h2>Editar Cuenta</h2>
 			<div class="photo">
-			   <br><input type="file" name="foto" id="new-foto" accept="image/*"><label for="new-foto"><img id="icon" src="Body/Iconos/usuario.png" width="20%"></label>
+			   <br><input type="file" name="foto" id="new-foto" accept="image/*">
+           <label id="poin" for="new-foto">
+           <img id="icon" src="Body/Iconos/usuario.png"></label>
 			</div>
 			<div class="inputBox">
 				<input type="text" id="new-name">
@@ -81,6 +90,30 @@
 	
 	<!-- fin -->
 
+  <!-- Modal para cortar imagen -->
+
+  <div class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <p>Recorta tu foto</p>
+        </div>
+        <div class="modal-body">
+            <div class="content-imagen-cropper">
+                <img src="" alt="" class="img-cropper" id="img-cropper">
+            </div>
+            <div class="content-imagen-sample">
+                <div src="" alt="" class="img-sample" id="img-croppered"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn primary" id="cut">Recortar</button>
+            <button class="btn secundary" id="close">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<script src="Body/js/jquery.js"></script>
+<script src="Body/js/cropper.js"></script>
 <script src="Body/Funciones/js/Configuración.js"></script>
 <script src="Body/Funciones/js/sweetalert.js"></script>
 
@@ -94,6 +127,7 @@
 
 <!-- script -->
 
+<script src="Body/js/index.js" type="module"></script>
 <script src="Body/js/app/firebase.js" type="module"></script>
 <script src="Body/js/User.js" type="module"></script>
 <script src="Body/js/Actualizar.js" type="module"></script>
@@ -120,30 +154,6 @@ eye.addEventListener("click", function(){
         eye.style.opacity = 0.2
     }
 })
-
-const original = 'Body/Iconos/usuario.png';
-
-const file = document.getElementById( 'new-foto' );
-const imgg = document.getElementById( 'icon' );
-const img = document.getElementById( 'photo' );
-file.addEventListener( 'change', e => {
-  if( e.target.files[0] ){
-    const reader = new FileReader( );
-    reader.onload = function( e ){
-      document.getElementById("box").style.display="none"
-      document.getElementById("vista").style.display="block"
-      img.src = e.target.result;
-      imgg.src = e.target.result;
-      setTimeout(function() {
-      document.getElementById("box").style.display="block"
-    },1000*2);
-    }
-    reader.readAsDataURL(e.target.files[0])
-  }else{
-    img.src = original;
-    imgg.src = original;
-  }
-} );
 
 </script>
 
